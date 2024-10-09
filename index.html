@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora AI - Download Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"> <!-- Poppins font -->
+    <style>
+        * {
+            box-sizing: border-box; /* Ensure padding doesn't affect width */
+            margin: 0; /* Reset default margin */
+            padding: 0; /* Reset default padding */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif; /* Set font to Poppins */
+            background-color: #f5f5f5; /* Light gray background */
+            color: #333; /* Dark text color */
+            line-height: 1.6; /* Improved readability */
+            display: flex; /* Flexbox for body */
+            flex-direction: column; /* Column layout */
+            min-height: 100vh; /* Full height of the viewport */
+        }
+
+        header {
+            background-color: #ffffff; /* White background for the header */
+            padding: 20px 0; /* Padding for header */
+            text-align: center; /* Centered text */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            position: sticky; /* Stick header at the top */
+            top: 0; /* Stick to the top */
+            z-index: 100; /* Ensure header is on top */
+        }
+
+        h1 {
+            font-size: 2.5em; /* Large font size for the title */
+            color: #0072ff; /* Blue color for the title */
+            margin-bottom: 10px; /* Space below title */
+        }
+
+        .hero {
+            display: flex; /* Flexbox for hero section */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            height: 70vh; /* Full height */
+            background: linear-gradient(135deg, #0072ff, #005bb5); /* Gradient background */
+            color: white; /* White text */
+            text-align: center; /* Center text */
+            padding: 40px; /* Padding for hero */
+        }
+
+        .hero h1 {
+            font-size: 3em; /* Font size for hero heading */
+            margin-bottom: 10px; /* Space below heading */
+        }
+
+        .hero p {
+            font-size: 1.2em; /* Font size for hero text */
+            max-width: 600px; /* Maximum width for readability */
+            margin: 10px auto; /* Centered horizontally */
+        }
+
+        .download-button {
+            display: inline-block; /* Inline block for the button */
+            background: #ffffff; /* Button background color */
+            color: #0072ff; /* Blue text color */
+            padding: 15px 25px; /* Button padding */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* No underline */
+            font-weight: 600; /* Semi-bold text */
+            transition: background 0.3s, transform 0.3s; /* Smooth transition */
+            margin-top: 20px; /* Margin above button */
+            font-size: 1em; /* Font size for button text */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        .download-button:hover {
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent on hover */
+            transform: translateY(-3px); /* Lift effect on hover */
+        }
+
+        .container {
+            display: grid; /* Use grid layout */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+            gap: 20px; /* Space between items */
+            max-width: 1200px; /* Maximum width for the container */
+            margin: 40px auto; /* Centered horizontally */
+            padding: 20px; /* Padding for the container */
+        }
+
+        .card {
+            background: #ffffff; /* White background for cards */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+            padding: 20px; /* Padding inside cards */
+            transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+            position: relative; /* For positioning child elements */
+            overflow: hidden; /* Hide overflow */
+            text-align: center; /* Center text inside card */
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+        }
+
+        .card h2 {
+            margin-top: 0; /* Remove top margin */
+            color: #0072ff; /* Blue color for headings */
+            font-size: 1.6em; /* Font size for card headings */
+        }
+
+        .card p {
+            margin: 10px 0; /* Margin for paragraph */
+        }
+
+        footer {
+            margin-top: auto; /* Push footer to the bottom */
+            text-align: center; /* Centered text in footer */
+            color: #777; /* Light gray text color */
+            padding: 20px 0; /* Padding for footer */
+            font-size: 0.9em; /* Slightly smaller font for footer */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em; /* Smaller title font on medium screens */
+            }
+
+            .hero p {
+                font-size: 1.1em; /* Smaller hero text on medium screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2em; /* Smaller title font on small screens */
+            }
+
+            .hero p {
+                font-size: 1em; /* Smaller hero text on small screens */
+            }
+
+            .download-button {
+                padding: 10px 20px; /* Adjust button padding for smaller screens */
+            }
+
+            .container {
+                padding: 10px; /* Reduced padding for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Quora AI</h1>
+</header>
+
+<div class="hero">
+    <h1>Download Quora AI</h1>
+    <p>Access a world of knowledge and insights with our AI-powered application. Download now for the best experience!</p>
+    <a href="download.html" class="download-button">Download Now</a> <!-- Link to download.html -->
+</div>
+
+<div class="container">
+    <div class="card">
+        <h2>Explore Topics</h2>
+        <p>Dive into a world of information across various subjects. Our AI helps you find answers quickly and efficiently.</p>
+    </div>
+    <div class="card">
+        <h2>Ask Questions</h2>
+        <p>Need clarity on a topic? Just ask! Our platform is designed to provide you with reliable and informative responses.</p>
+    </div>
+    <div class="card">
+        <h2>Join the Community</h2>
+        <p>Connect with like-minded individuals and share your insights. Be a part of a vibrant knowledge-sharing community.</p>
+    </div>
+    <div class="card">
+        <h2>Get Personalized Insights</h2>
+        <p>Receive tailored content recommendations based on your interests and previous interactions.</p>
+    </div>
+    <div class="card">
+        <h2>Real-Time Updates</h2>
+        <p>Stay informed with the latest trends and topics as they evolve in real-time. Your go-to source for knowledge.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Quora AI. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
